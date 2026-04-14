@@ -5,6 +5,30 @@ Stack: React + Vite, Tailwind CSS, Framer Motion, Supabase.
 
 ---
 
+Key Technologies:
+
+    Frontend: React.js with Tailwind CSS (Glassmorphism & Manga-tech UI)
+
+    Backend-as-a-Service: Supabase (PostgreSQL, Real-time DB)
+
+    Security & Auth: Supabase Auth (JWT-based protected routes)
+
+    Storage: Supabase Buckets (Cloud-based asset management)
+
+    AI Engine: Custom-built Bud AI Agent (Generative AI integration)
+
+    Deployment: Vercel (CI/CD Pipeline)
+
+Pro Highlights:
+
+1.Agentic Reality: Integration of Bud AI to streamline study assistance and portfolio interactions, aligning with 2026's shift toward an "agentic" workforce.
+
+2.Secure Data Orchestration: Implemented a secure Certificate Vault using Supabase Storage with strict public/private access policies.
+
+3.Responsive Architecture: Fully optimized for mobile and desktop, utilizing a modular file structure for easy scalability.
+
+4.Future-Ready Scalability: Designed with a decoupled architecture, allowing for the addition of new AI modules or data sources without downtime.
+
 ## Quick Start
 
 ### 1. Install dependencies
