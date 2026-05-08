@@ -19,100 +19,92 @@ export const CertificateVault = () => {
     fetchCerts();
   }, []);
 
-  const placeholders = [
-    const placeholders = [
- const placeholders = [
-    /* ─── High-Priority Professional Achievements ─── */
-    { 
-      id: 'p1', 
-      title: 'Software Engineering Job Simulation', 
-      issuer: 'JPMorgan Chase & Co.', 
-      date: '2026-04', 
-      pdf_url: 'https://drive.google.com/file/d/12cLWOpNpl1x4UyqEyKJalXaaq9oTXDOh/view?usp=sharing'
-    },
-    { 
-      { 
-      id: 'p2', 
-      title: 'Selected Participant: Google Cloud Gen AI Academy (Cohort 2)', 
-      issuer: 'Google Cloud', 
-      date: '2026-05', 
-      pdf_url: 'https://hack2skill.com/dashboard' 
-},
-    },
-    { 
-      id: 'p3', 
-      title: 'Student Ambassador Program (Shortlisted)', 
-      issuer: 'Google', 
-      date: '2026-05', 
-      pdf_url: '#' 
-    },
-    /* ─── AI & Machine Learning Specializations ─── */
-    { 
-      id: 'p4', 
-      title: 'Machine Learning Specialization', 
-      issuer: 'DeepLearning.AI · Coursera', 
-      date: '2024-08', 
-      pdf_url: '#' 
-    },
-    { 
-      id: 'p5', 
-      title: 'Generative AI with LLMs', 
-      issuer: 'AWS · Coursera', 
-      date: '2024-06', 
-      pdf_url: '#' 
-    },
-    { 
-      id: 'p6', 
-      title: 'Prompt Engineering for Developers', 
-      issuer: 'DeepLearning.AI', 
-      date: '2024-07', 
-      pdf_url: '#' 
-    },
-    { 
-      id: 'p7', 
-      title: 'Neural Networks and Deep Learning', 
-      issuer: 'DeepLearning.AI', 
-      date: '2024-09', 
-      pdf_url: '#' 
-    },
-    /* ─── Data & Technical Foundations ─── */
-    { 
-      id: 'p8', 
-      title: 'Google Data Analytics', 
-      issuer: 'Google · Coursera', 
-      date: '2024-03', 
-      pdf_url: '#' 
-    },
-    { 
-      id: 'p9', 
-      title: 'AI Fundamentals & Data Science', 
-      issuer: 'IBM', 
-      date: '2025-12', 
-      pdf_url: '#' 
-    },
-    { 
-      id: 'p10', 
-      title: 'Python for Data Science', 
-      issuer: 'IBM · Coursera', 
-      date: '2023-11', 
-      pdf_url: '#' 
-    },
-    /* ─── Professional & Creative Skills ─── */
-    { 
-      id: 'p11', 
-      title: 'HR Analytics Specialization', 
-      issuer: 'University of California, Irvine (UCI)', 
-      date: '2025-06', 
-      pdf_url: '#' 
-    },
-    { 
-      id: 'p12', 
-      title: 'Graphic Design Specialization', 
-      issuer: 'Adobe', 
-      date: '2024-09', 
-      pdf_url: '#' 
-    }
-  ];
+const placeholders = [
+  { 
+    id: 'p1', 
+    title: 'Software Engineering Job Simulation', 
+    issuer: 'JPMorgan Chase & Co.', 
+    date: '2026-04', 
+    pdf_url: 'https://drive.google.com/file/d/12cLWOpNpl1x4UyqEyKJalXaaq9oTXDOh/view?usp=sharing' 
+  },
+  { 
+    id: 'p2', 
+    title: 'Google Cloud Gen AI Academy (Cohort 2)', 
+    issuer: 'Google Cloud', 
+    date: '2026-05', 
+    pdf_url: 'https://hack2skill.com/dashboard' 
+  },
+  { 
+    id: 'p3', 
+    title: 'Student Ambassador Program (Shortlisted)', 
+    issuer: 'Google', 
+    date: '2026-05', 
+    pdf_url: '#' 
+  },
+  { 
+    id: 'p4', 
+    title: 'Machine Learning Specialization', 
+    issuer: 'DeepLearning.AI', 
+    date: '2024-08', 
+    pdf_url: '#' 
+  },
+  { 
+    id: 'p5', 
+    title: 'Generative AI with LLMs', 
+    issuer: 'AWS', 
+    date: '2024-06', 
+    pdf_url: '#' 
+  },
+  { 
+    id: 'p6', 
+    title: 'Prompt Engineering for Developers', 
+    issuer: 'DeepLearning.AI', 
+    date: '2024-07', 
+    pdf_url: '#' 
+  },
+  { 
+    id: 'p7', 
+    title: 'Neural Networks and Deep Learning', 
+    issuer: 'DeepLearning.AI', 
+    date: '2024-09', 
+    pdf_url: '#' 
+  },
+  { 
+    id: 'p8', 
+    title: 'Google Data Analytics', 
+    issuer: 'Google', 
+    date: '2024-03', 
+    pdf_url: '#' 
+  },
+  { 
+    id: 'p9', 
+    title: 'AI Fundamentals & Data Science', 
+    issuer: 'IBM', 
+    date: '2025-12', 
+    pdf_url: '#' 
+  },
+  { 
+    id: 'p10', 
+    title: 'Python for Data Science', 
+    issuer: 'IBM', 
+    date: '2023-11', 
+    pdf_url: '#' 
+  },
+  { 
+    id: 'p11', 
+    title: 'HR Analytics Specialization', 
+    issuer: 'UCI', 
+    date: '2025-06', 
+    pdf_url: '#' 
+  },
+  { 
+    id: 'p12', 
+    title: 'Graphic Design Specialization', 
+    issuer: 'Adobe', 
+    date: '2024-09', 
+    pdf_url: '#' 
+  }
+];
   const displayCerts = certs.length > 0 ? certs : placeholders;
 
   const formatDate = (dateStr) => {
