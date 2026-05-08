@@ -12,43 +12,42 @@ const fadeUp = {
     transition: { delay: i * 0.08, duration: 0.5, ease: [0.22, 1, 0.36, 1] }
   })
 };
-
 /* ─── Static fallback projects ────────────────────────────── */
 const FALLBACK_PROJECTS = [
   {
     id: 1,
-    title: 'Retrieval-Augmented Generation Pipeline',
-    description: 'Engineered a production-grade RAG system using LangChain and FAISS vector indexing. Ingests unstructured PDF corpora, chunks with semantic overlap, embeds via OpenAI Ada-002, and serves zero-hallucination Q&A through a FastAPI layer. Reduced LLM token cost by 40% vs. naive full-context injection.',
-    tags: ['LangChain', 'FAISS', 'FastAPI', 'OpenAI', 'Python'],
-    live_url: '#',
-    doc_url: '#',
+    title: 'Bud AI: Multi-Agent Personal Assistant',
+    description: 'Developed an agentic personal assistant using Python and React with a custom "glassmorphism" aesthetic. Features a specialized Teacher Persona system that utilizes context-aware retrieval to provide high-accuracy academic support and interactive student engagement.',
+    tags: ['Python', 'React', 'Gemini API', 'Generative AI', 'NLP'],
+    live_url: 'https://zia0309-budai.hf.space',
+    doc_url: 'https://github.com/Jouzia',
     is_featured: true,
   },
   {
     id: 2,
-    title: 'Multimodal Sentiment Analyzer',
-    description: 'Built a dual-encoder classifier combining BERT-based text embeddings with CNN-extracted visual features from social media posts. Achieves 91.4% macro-F1 on the MulSen-21 benchmark. Deployed as a containerized microservice on GCP Cloud Run with real-time Pub/Sub streaming.',
-    tags: ['PyTorch', 'BERT', 'Docker', 'GCP', 'Transformers'],
-    live_url: '#',
-    doc_url: '#',
+    title: 'Secure MCP Server & AI Chatbot',
+    description: 'Engineered a standalone chatbot backend utilizing the Model Context Protocol (MCP). Implemented a standardized MCP server using JSON-RPC/stdio transport layers, allowing the LLM to securely execute local functions, fetch real-time data, and interact with local academic files.',
+    tags: ['MCP', 'Python', 'JSON-RPC', 'Node.js', 'API Integration'],
+    live_url: 'https://github.com/Jouzia', 
+    doc_url: 'https://github.com/Jouzia',
     is_featured: true,
   },
   {
     id: 3,
-    title: 'Predictive Hospital Readmission Model',
-    description: 'Developed an XGBoost ensemble trained on 50K+ de-identified patient records from the MIMIC-III dataset. Implemented SHAP explainability to satisfy clinical audit requirements. Integrated with a Streamlit decision-support dashboard used in a pilot study with St. Joseph\'s Medical faculty.',
-    tags: ['XGBoost', 'SHAP', 'Streamlit', 'Pandas', 'scikit-learn'],
+    title: 'Gaming Behavior Trends Dashboard',
+    description: 'Built a dynamic analytical dashboard in Microsoft Excel to automate the tracking of player engagement metrics. Leveraged advanced pivot tables, power query, and conditional formatting to transform raw datasets into actionable insights, streamlining weekly reporting workflows.',
+    tags: ['Data Analytics', 'Excel', 'Data Visualization', 'Pivot Tables'],
     live_url: '#',
     doc_url: '#',
     is_featured: false,
   },
   {
     id: 4,
-    title: 'Autonomous SQL Query Generator',
-    description: 'Fine-tuned a CodeLlama-7B model on a domain-specific text-to-SQL corpus using QLoRA (4-bit quantization). Achieves 78.3% execution accuracy on Spider benchmark. Features an iterative self-correction loop where failed queries are re-prompted with the database schema and error trace.',
-    tags: ['LLM', 'CodeLlama', 'QLoRA', 'SQL', 'HuggingFace'],
-    live_url: '#',
-    doc_url: '#',
+    title: 'Full-Stack Personal Portfolio',
+    description: 'Designed and deployed a mobile-first, responsive portfolio using Next.js and JavaScript. Focused on high-performance rendering and a modern UI to showcase live sub-projects and integrated AI assistants.',
+    tags: ['Next.js', 'JavaScript', 'Tailwind CSS', 'Vercel'],
+    live_url: 'https://jouziaportfolio.vercel.app/',
+    doc_url: 'https://github.com/Jouzia',
     is_featured: false,
   },
 ];
