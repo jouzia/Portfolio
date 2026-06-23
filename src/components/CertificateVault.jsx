@@ -73,11 +73,26 @@ export const CertificateVault = () => {
   };
 
   return (
-    <div style={{ width: '100%', position: 'relative' }}>
-      {/* 3. Added Navigation Buttons */}
-      <div style={{ position: 'absolute', right: 0, top: '-3rem', display: 'flex', gap: '8px' }}>
-        <button onClick={() => scroll('left')} style={{ cursor: 'pointer', background: 'transparent', border: '1px solid #444', color: '#fff', borderRadius: '4px', padding: '4px 10px' }}>←</button>
-        <button onClick={() => scroll('right')} style={{ cursor: 'pointer', background: 'transparent', border: '1px solid #444', color: '#fff', borderRadius: '4px', padding: '4px 10px' }}>→</button>
+    <div style={{ width: '100%' }}>
+      {/* 1. Header and Navigation container */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+        <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#fff', margin: 0 }}>Credential vault</h2>
+        
+        {/* Buttons are now inline and guaranteed to be visible */}
+        <div style={{ display: 'flex', gap: '8px' }}>
+          <button 
+            onClick={() => scroll('left')} 
+            style={{ cursor: 'pointer', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', color: '#fff', borderRadius: '8px', padding: '6px 14px' }}
+          >
+            ←
+          </button>
+          <button 
+            onClick={() => scroll('right')} 
+            style={{ cursor: 'pointer', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', color: '#fff', borderRadius: '8px', padding: '6px 14px' }}
+          >
+            →
+          </button>
+        </div>
       </div>
 
       {loading ? (
@@ -88,7 +103,7 @@ export const CertificateVault = () => {
         </div>
       ) : (
         <div 
-          ref={scrollContainerRef} // 4. Attached the ref here
+          ref={scrollContainerRef}
           style={{ display: 'flex', gap: '1.5rem', width: '100%', overflowX: 'auto', paddingBottom: '1.25rem', scrollSnapType: 'x mandatory', scrollbarWidth: 'thin' }}
         >
           <AnimatePresence>
@@ -116,6 +131,8 @@ export const CertificateVault = () => {
       {certs.length === 0 && !loading && (
         <p style={{ textAlign: 'center', color: 'var(--text-muted)', fontSize: '0.78rem', marginTop: '1.5rem', fontFamily: 'var(--font-mono)' }}>// showing placeholder data — connect Supabase to load live certificates</p>
       )}
+
+
 
       <AnimatePresence>
         {selectedCert && (
